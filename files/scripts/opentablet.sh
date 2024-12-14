@@ -10,7 +10,7 @@ echo 'Enabling gloriouseggroll/nobara-41'
 dnf5 copr enable gloriouseggroll/nobara-41
 
 echo 'Installing opentablet driver'
-dnf5 install opentabletdriver
+dnf5 install opentabletdriver -y
 
 echo 'Disabling gloriouseggroll/nobara-41'
 dnf5 copr disable gloriouseggroll/nobara-41
