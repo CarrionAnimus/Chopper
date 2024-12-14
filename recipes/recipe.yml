@@ -17,6 +17,9 @@ modules:
   - type: script
     scripts:
       - rechunk-fix.sh
+      - nvidia-powerlimit.sh
+      - zram.sh
+      - opentablet.sh
 
   - type: rpm-ostree
     repos:
@@ -97,7 +100,6 @@ modules:
         - org.kde.krita
         - dev.vencord.Vesktop
         - com.vscodium.codium
-        - com.usebottles.bottles
         - com.github.wwmm.easyeffects
 
   - type: chezmoi
