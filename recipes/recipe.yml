@@ -18,7 +18,6 @@ modules:
     scripts:
       - rechunk-fix.sh
       - nvidia-powerlimit.sh
-      - zram.sh
       - opentablet.sh
 
   - type: rpm-ostree
@@ -43,7 +42,6 @@ modules:
       # Bar
       - waybar
       - SwayNotificationCenter
-      #- network-manager-applet
 
       # launchers
       - rofi-wayland
