@@ -88,7 +88,7 @@ modules:
       - libsixel-utils
 
       # opentablet-driver
-      - https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-41/fedora-41-x86_64/08300327-opentabletdriver/opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm
+      - https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc%OS_VERSION%.x86_64.rpm
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
