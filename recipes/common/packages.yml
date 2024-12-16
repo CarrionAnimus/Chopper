@@ -1,24 +1,4 @@
----
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: chopper
-description: This is my personal OS image.
-alt-tags:
-  - secureblue-nvidia-open-hyprland
-
-base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-open-hardened
-image-version: 41
-
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: /
-
-  - type: script
-    scripts:
-      - rechunk-fix.sh
-      - nvidia-powerlimit.sh
-
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
@@ -92,23 +72,3 @@ modules:
 
       # opentablet-driver
       - https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc%OS_VERSION%.x86_64.rpm
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system: {}
-    user:
-      install:
-        - io.github.zen_browser.zen
-        - com.github.tchx84.Flatseal
-        - org.kde.krita
-        - dev.vencord.Vesktop
-        - com.vscodium.codium
-        - com.github.wwmm.easyeffects
-
-  - type: chezmoi
-    repository: "https://github.com/CarrionAnimus/dotfiles"
-    branch: "hyprland"
-    all-users: true
-    file-conflict-policy: replace
-
-  - type: signing
