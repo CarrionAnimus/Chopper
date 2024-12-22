@@ -6,7 +6,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     install:
       # Hypr
-      #- hyprland-git
+      - hyprland-git
       - hyprlock
       - hypridle
       - hyprpicker
@@ -15,7 +15,6 @@ modules:
       - xcur2png
       - xdg-desktop-portal-hyprland
       - xdg-desktop-portal-gtk
-      - hyprpaper
       - swww
 
       # Bar
@@ -24,14 +23,6 @@ modules:
 
       # launchers
       - rofi-wayland
-
-      # file manager
-      - thunar
-      - thunar-archive-plugin
-      - thunar-volman
-
-      # polkit
-      - xfce-polkit
 
       # terminal
       - foot
@@ -48,7 +39,6 @@ modules:
       - pipx
       - fastfetch
       - btop
-      - neovim
       - bat
       - eza
       - ncdu
@@ -57,7 +47,6 @@ modules:
       - glab
       - tealdeer
       - ugrep
-      - yq
       - tmux
       - zoxide
       - ShellCheck
