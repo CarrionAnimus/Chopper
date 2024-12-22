@@ -1,8 +1,10 @@
 modules:
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
-    system: {}
     user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (user)"
       install:
         - io.github.zen_browser.zen
         - com.github.tchx84.Flatseal

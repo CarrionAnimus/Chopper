@@ -5,7 +5,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     replace:
-      - hyprland-git
+      - from-repo: https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+        packages:
+          - hyprland-git
     install:
       # Hypr
       - hyprlock
@@ -56,9 +58,8 @@ modules:
       - aria2
       - libsixel
       - libsixel-utils
-
-      # Media
       - mpv
+      - imv
 
       # opentablet-driver
       - https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc%OS_VERSION%.x86_64.rpm
