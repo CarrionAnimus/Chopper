@@ -9,34 +9,23 @@ base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-open-hardened
 image-version: 41
 
 modules:
+  - from-file: common/packages.yml
   - type: rpm-ostree
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-        packages:
-          - hyprland-git
-          - xdg-desktop-portal-hyprland
+    install:
+      - xdg-desktop-portal-gtk
+  - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     install:
-      # Hypr
-      #- hyprland-git
-      - hyprlock
-      - hypridle
-      - hyprpicker
-      - hyprshot
       - hyprcursor
       - xcur2png
-      - xdg-desktop-portal-gtk
       - swww
-
-      # Bar
-      - waybar
       - SwayNotificationCenter
-
-      # launchers
-      - rofi-wayland
-  - from-file: common/packages.yml
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+        packages:
+          - xdg-desktop-portal-hyprland
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
 
