@@ -5,7 +5,7 @@ description: Secureblue hyprland
 alt-tags:
   - secureblue-nvidia-open-hyprland
 
-base-image: ghcr.io/secureblue/hyprland-nvidia-open-hardened
+base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-open-hardened
 image-version: 41
 
 modules:
