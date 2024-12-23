@@ -27,6 +27,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
+          - cosmic-nvidia.yml
           - main-nvidia.yml
           - tesla.yml
     steps:

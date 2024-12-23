@@ -9,7 +9,7 @@ base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-hardened
 image-version: 41
 
 modules:
-  - from-file: common/packages.yml
+  - from-file: common/packages_hyprland.yml
   - from-file: common/flatpak.yml
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
