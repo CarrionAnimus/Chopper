@@ -9,6 +9,11 @@ base-image: ghcr.io/secureblue/cosmic-nvidia-open-hardened
 image-version: 41
 
 modules:
+  - type: rpm-ostree
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+        packages:
+        - cosmic-desktop
   - from-file: common/packages.yml
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
