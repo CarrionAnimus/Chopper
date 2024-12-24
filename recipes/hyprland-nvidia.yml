@@ -19,6 +19,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     install:
       - hyprcursor
+      - hyprshot
+      - hyprpicker
       - xcur2png
       - swww
       - SwayNotificationCenter
@@ -26,6 +28,7 @@ modules:
       - from-repo: https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
         packages:
           - xdg-desktop-portal-hyprland
+          - hyprland-git
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
 
