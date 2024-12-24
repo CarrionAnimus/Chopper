@@ -9,18 +9,8 @@ base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-open-hardened
 image-version: 41
 
 modules:
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-    install:
-      - hyprcursor
-      - hyprshot
-      - hyprpicker
-      - xcur2png
-      - swww
-      - SwayNotificationCenter
-
+  - from-file: common/hyprland-packages.yml
+  - from-file: common/packages.yml
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
 

@@ -1,21 +1,23 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: chopper
-description: Secureblue Cosmic
+description: Secureblue Hyprland
 alt-tags:
-  - secureblue-nvidia-open-cosmic
+  - secureblue-nvidia-hyprland-tesla
 
-base-image: ghcr.io/secureblue/cosmic-nvidia-open-hardened
+base-image: ghcr.io/secureblue/wayblue-hyprland-nvidia-hardened
 image-version: 41
 
 modules:
+  - from-file: common/hyprland-packages.yml
   - from-file: common/packages.yml
+  - from-file: common/flatpak.yml
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
 
   - type: script
     scripts:
-      - nvidia/nvidia-powerlimit.sh
+      - nvidia/tesla-powerlimit.sh
 
   - from-file: common/scripts.yml
 
