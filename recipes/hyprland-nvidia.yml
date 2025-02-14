@@ -11,6 +11,7 @@ image-version: 41
 modules:
   - from-file: common/hyprland-packages.yml
   - from-file: common/packages.yml
+  - from-file: common/opentabletdriver.yml
   - from-file: common/chezmoi.yml
   - from-file: common/files.yml
 

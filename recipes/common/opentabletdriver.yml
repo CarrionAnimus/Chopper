@@ -1,0 +1,4 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc%OS_VERSION%.x86_64.rpm
