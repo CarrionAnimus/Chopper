@@ -1,37 +1,4 @@
 modules:
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    remove:
-      - dunst
-    install:
-      # terminal
-      - foot
-
-      # Containers
-      - podman
-      - buildah
-      - distrobox
-
-      # cli tools
-      - android-tools
-      - zsh
-      - fastfetch
-      - btop
-      - bat
-      - eza
-      - ncdu
-      - fd-find
-      - gh
-      - glab
-      - tealdeer
-      - ugrep
-      - tmux
-      - zoxide
-      - ShellCheck
-      - starship
-      - aria2
-      - libsixel
-      - libsixel-utils
-      - mpv
-      - imv
+  - type: containerfile
+    containerfiles:
+      - packages

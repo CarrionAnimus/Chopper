@@ -2,7 +2,23 @@ RUN dnf5 -y copr enable solopasha/hyprland fedora-41-x86_64 \
     && dnf5 -y copr enable erikreider/SwayNotificationCenter fedora-41-x86_64 \
     && dnf5 -y config-manager setopt copr:copr.fedorainfracloud.org:solopasha:hyprland.priority=1 \
     && dnf5 -y remove hyprland hyprutils hyprlang xdg-desktop-portal-hyprland hyprpaper hyprlock hypridle \
-    && dnf5 -y install aquamarine hyprland-git hyprutils hyprlang xdg-desktop-portal-hyprland hyprland-git-devel hyprgraphics hyprlang-devel hyprcursor hyprshot hyprpicker hyprlock hypridle xcur2png swww SwayNotificationCenter \
+    && dnf5 -y install \
+        aquamarine \
+        hyprland-git \
+        hyprutils \
+        hyprlang \
+        xdg-desktop-portal-hyprland \
+        hyprland-git-devel \
+        hyprgraphics \
+        hyprlang-devel \
+        hyprcursor \
+        hyprshot \
+        hyprpicker \
+        hyprlock \
+        hypridle \
+        xcur2png \
+        swww \
+        SwayNotificationCenter \
     && dnf5 -y copr remove solopasha/hyprland \
     && dnf5 -y copr remove erikreider/SwayNotificationCenter \
     && dnf5 -y clean all \
