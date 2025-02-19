@@ -1,5 +1,4 @@
 RUN dnf5 -y copr enable atim/starship fedora-41-x86_64 \
-    && dnf5 -y config-manager setopt copr:copr.fedorainfracloud.org:atim:starship=99 \
     && dnf5 -y remove dunst \
     && dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm \
     && dnf5 -y install \
