@@ -27,9 +27,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - hyprland-nvidia.yml
           - silverblue-nvidia.yml
-          - hyprland-tesla.yml
+          - silverblue-tesla.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
