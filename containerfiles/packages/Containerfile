@@ -9,13 +9,10 @@ RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main
         zsh \
         fastfetch \
         btop \
-        bat \
-        eza \
         ncdu \
         fd-find \
         gh \
         glab \
-        tealdeer \
         ugrep \
         tmux \
         zoxide \
