@@ -1,9 +1,9 @@
-RUN dnf5 -y --skip-unavailable install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm \
-    && dnf5 -y --skip-unavailable install \
+RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm \
+    && dnf5 -y install \
         podman \
         buildah \
         distrobox \
-    && dnf5 -y --skip-unavailable install \
+    && dnf5 -y install \
         foot \
         android-tools \
         zsh \
@@ -20,7 +20,7 @@ RUN dnf5 -y --skip-unavailable install https://raw.githubusercontent.com/Carrion
         aria2 \
         libsixel \
         libsixel-utils \
-    && dnf5 -y --skip-unavailable install \
+    && dnf5 -y install \
         mpv \
         imv \
     && dnf5 -y clean all \
