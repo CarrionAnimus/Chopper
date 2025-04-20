@@ -6,7 +6,7 @@ alt-tags:
   - secureblue-nvidia-open-silverblue
 
 base-image: ghcr.io/secureblue/silverblue-nvidia-open-hardened
-image-version: 41
+image-version: 42
 
 modules:
   - from-file: common/packages.yml
