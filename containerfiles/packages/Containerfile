@@ -4,6 +4,7 @@ RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main
         buildah \
         distrobox \
     && dnf5 -y install \
+	atuin \
         foot \
         android-tools \
         zsh \
