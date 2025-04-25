@@ -9,10 +9,12 @@ RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main
         zsh \
         fastfetch \
         btop \
+        bat \
         ncdu \
         fd-find \
         gh \
         glab \
+        tealdeer \
         ugrep \
         tmux \
         zoxide \
@@ -23,5 +25,8 @@ RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main
     && dnf5 -y install \
         mpv \
         imv \
+    && dnf5 -y copr enable atim/starship fedora-42-x86_64 \
+    && dnf5 -y install starship \
+    && dnf5 -y copr remove atim/starship \
     && dnf5 -y clean all \
     && ostree container commit
