@@ -1,6 +1,6 @@
 modules:
   - type: chezmoi
     repository: "https://github.com/CarrionAnimus/dotfiles"
-    branch: "hyprland"
+    branch: "main"
     all-users: true
     file-conflict-policy: replace
