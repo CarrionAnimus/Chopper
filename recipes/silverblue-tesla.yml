@@ -18,5 +18,3 @@ modules:
       - nvidia/tesla-powerlimit.sh
 
   - from-file: common/scripts.yml
-
-  - type: signing

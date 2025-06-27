@@ -18,5 +18,3 @@ modules:
       - nvidia/nvidia-powerlimit.sh
 
   - from-file: common/scripts.yml
-
-  - type: signing

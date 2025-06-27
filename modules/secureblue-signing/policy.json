@@ -6,6 +6,15 @@
   ],
   "transports": {
     "docker": {
+      "ghcr.io/carrionanimus": [
+        {
+          "type": "sigstoreSigned",
+          "keyPath": "/usr/etc/pki/containers/carrionanimus.pub",
+          "signedIdentity": {
+            "type": "matchRepository"
+          }
+        }
+      ],
       "gcr.io/projectsigstore": [
         {
           "type": "sigstoreSigned",
