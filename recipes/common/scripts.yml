@@ -1,4 +1,7 @@
 modules:
+  - type: secureblue-signing
+    source: local
+
   - type: script
     scripts:
       - common/rechunk-fix.sh
