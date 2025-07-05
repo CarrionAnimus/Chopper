@@ -1,0 +1,7 @@
+modules:
+  - type: secureblue-signing
+    source: local
+
+  - type: script
+    scripts:
+      - common/regenerateinitramfs.sh

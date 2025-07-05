@@ -1,0 +1,21 @@
+modules:
+  - type: dnf
+    source: local
+    repos:
+      cleanup: true
+      copr:
+        - name: yalter/niri-git
+          chroot: fedora-42-x86_64
+        - name: solopasha/hyprland
+          chroot: fedora-42-x86_64
+    install:
+      skip-unavailable: true
+      packages:
+        - niri
+        - waybar
+        - swww
+        - fuzzel
+        - swayidle
+        - swaylock
+        - pavucontrol
+        - xwayland-satellite

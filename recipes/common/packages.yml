@@ -1,0 +1,62 @@
+modules:
+  - type: dnf
+    source: local
+    repos:
+      cleanup: true # clean up added repos after module is done
+      files:
+        - charm.repo
+      copr:
+        - name: atim/starship
+          chroot: fedora-42-x86_64
+    install:
+      skip-unavailable: true # skip unavailable packages
+      packages:
+        # Starship
+        - repo: copr:copr.fedorainfracloud.org:atim:starship
+          packages:
+            - starship
+        # Charm
+        - repo: charm
+          packages:
+            - gum
+        # OTD
+        - opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm
+        # CLI
+        - lm_sensors
+        - podman
+        - buildah
+        - distrobox
+        - flatpak-builder
+        - android-tools
+        - zsh
+        - duperemove
+        - atuin
+        - foot
+        - fastfetch
+        - btop
+        - bat
+        - gdu
+        - fd-find
+        - gh
+        - glab
+        - tealdeer
+        - ugrep
+        - tmux
+        - zoxide
+        - ShellCheck
+        - aria2
+        - libsixel
+        - libsixel-utils
+        - helix
+        - ripgrep
+        # qt
+        - qt6-qt5compat
+        - qt5-qtsvg
+        - qt6-qtsvg
+        - qt5-qtimageformats
+        - qt6-qtimageformats
+        - qt5-qtmultimedia
+        - qt6-qtmultimedia
+        # GUI
+        - mpv
+        - imv
