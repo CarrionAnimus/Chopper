@@ -3,6 +3,7 @@ RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main
     podman \
     buildah \
     distrobox \
+    flatpak-builder \
     && dnf5 -y install \
     duperemove \
     atuin \
