@@ -32,5 +32,3 @@ nvidia-smi -i 0 -pl 150' > /usr/libexec/nvidia-powerlimit.sh
 chmod +x /usr/libexec/nvidia-powerlimit.sh
 
 systemctl enable nvidia-powerlimit.service
-
-systemctl enable coolercontrold
