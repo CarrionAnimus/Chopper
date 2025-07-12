@@ -1,41 +1,47 @@
 RUN dnf5 -y install https://raw.githubusercontent.com/CarrionAnimus/Chopper/main/files/rpm/opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm \
     && dnf5 -y install \
-    podman \
-    buildah \
-    distrobox \
-    flatpak-builder \
+        podman \
+        buildah \
+        distrobox \
+        flatpak-builder \
     && dnf5 -y install \
-    duperemove \
-    atuin \
-    foot \
-    android-tools \
-    zsh \
-    fastfetch \
-    btop \
-    bat \
-    ncdu \
-    fd-find \
-    gh \
-    glab \
-    tealdeer \
-    ugrep \
-    tmux \
-    zoxide \
-    ShellCheck \
-    aria2 \
-    libsixel \
-    libsixel-utils \
-    helix \
-    ripgrep \
-    gum \
+        duperemove \
+        atuin \
+        foot \
+        android-tools \
+        zsh \
+        fastfetch \
+        btop \
+        bat \
+        ncdu \
+        fd-find \
+        gh \
+        glab \
+        tealdeer \
+        ugrep \
+        tmux \
+        zoxide \
+        ShellCheck \
+        aria2 \
+        libsixel \
+        libsixel-utils \
+        helix \
+        ripgrep \
+        gum \
     && dnf5 -y install \
-    mpv \
-    imv \
+        mpv \
+        imv \
+    && dnf5 -y install \
+        lm_sensors \
+        liquidctl \
+    && dnf5 -y copr enable codifryed/CoolerControl fedora-42-x86_64 \
+        && dnf5 -y install \
+            coolercontrol \
+            coolercontrol-liqctld \
+            coolercontrold \
+        && dnf5 -y copr remove codifryed/CoolerControl \
     && dnf5 -y copr enable atim/starship fedora-42-x86_64 \
-    && dnf5 -y install starship \
-    && dnf5 -y copr remove atim/starship \
-    && dnf5 -y copr enable lihaohong/yazi fedora-42-x86_64 \
-    && dnf5 -y install yazi --setopt=install_weak_deps=False \
-    && dnf5 -y copr remove lihaohong/yazi \
+        && dnf5 -y install starship \
+        && dnf5 -y copr remove atim/starship \
     && dnf5 -y clean all \
     && ostree container commit
