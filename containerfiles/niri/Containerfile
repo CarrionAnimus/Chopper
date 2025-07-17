@@ -1,0 +1,8 @@
+RUN dnf5 -y copr enable yalter/niri-git fedora-42-x86_64 \
+    && dnf5 -y config-manager setopt copr:copr.fedorainfracloud.org:yalter/niri-git.priority=1 \
+    && dnf5 -y install \
+        niri \
+        fuzzel \
+    && dnf5 -y copr remove yalter/niri-git \
+    && dnf5 -y clean all \
+    && ostree container commit

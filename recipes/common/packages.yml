@@ -2,3 +2,4 @@ modules:
   - type: containerfile
     containerfiles:
       - packages
+      - niri
