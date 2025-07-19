@@ -1,14 +1,32 @@
 modules:
   - type: dnf
     source: local
-    cleanup: true # clean up added repos after module is done
+    repos:
+      cleanup: true # clean up added repos after module is done
+      copr:
+        - name: errornointernet/quickshell
+          chroot: fedora-42-x86_64
+        - name: yalter/niri-git
+          chroot: fedora-42-x86_64
+        - name: solopasha/hyprland
+          chroot: fedora-42-x86_64
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
+        - quickshell-git
         - niri
+        - swww
         - fuzzel
         - swayidle
         - swaylock
         - pavucontrol
         - xwayland-satellite
-        - waybar
+        - qt6-qt5compat
+        - qt5-qtsvg
+        - qt6-qtsvg
+        - qt5-qtimageformats
+        - qt6-qtimageformats
+        - qt5-qtmultimedia
+        - qt6-qtmultimedia
+        - cava
+        - material-icons-fonts
