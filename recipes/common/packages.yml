@@ -1,11 +1,13 @@
 modules:
   - type: dnf
+    source: local
     repos:
       cleanup: true # clean up added repos after module is done
       files:
         - charm.repo
       copr:
-        - atim/starship
+        - name: atim/starship
+          chroot: fedora-42-x86_64
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
