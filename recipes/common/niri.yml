@@ -1,0 +1,30 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true # clean up added repos after module is done
+      copr:
+        - yalter/niri-git
+    install:
+      skip-unavailable: true # skip unavailable packages
+      packages:
+        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
+          packages:
+            - niri
+        - fuzzel
+        - swayidle
+        - swaylock
+        - pavucontrol
+        - xwayland-satellite
+
+        - repo: copr:copr.fedorainfracloud.org:yalter:solopasha:hyprland
+          packages:
+            - swww
+            - waybar-git
+            - astal
+            - astal-gjs
+            - astal-gtk4
+            - astal-io
+            - astal-libs
+            - astal-lua
+            - appmenu-glib-translator
+            - aylurs-gtk-shell2

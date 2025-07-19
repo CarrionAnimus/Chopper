@@ -1,5 +1,53 @@
 modules:
-  - type: containerfile
-    containerfiles:
-      - packages
-      - niri
+  - type: dnf
+    repos:
+      cleanup: true # clean up added repos after module is done
+      files:
+        - charm.repo
+      copr:
+        - atim/starship
+    install:
+      skip-unavailable: true # skip unavailable packages
+      packages:
+        # Starship
+        - repo: copr:copr.fedorainfracloud.org:atim:starship
+          packages:
+            - starship
+        # Charm
+        - repo: charm
+          packages:
+            - gum
+            - mods
+        # OTD
+        - opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm
+        # CLI
+        - lm_sensors
+        - podman
+        - buildah
+        - distrobox
+        - flatpak-builder
+        - android-tools
+        - zsh
+        - duperemove
+        - atuin
+        - foot
+        - fastfetch
+        - btop
+        - bat
+        - ncdu
+        - fd-find
+        - gh
+        - glab
+        - tealdeer
+        - ugrep
+        - tmux
+        - zoxide
+        - ShellCheck
+        - aria2
+        - libsixel
+        - libsixel-utils
+        - helix
+        - ripgrep
+        # GUI
+        - mpv
+        - imv
