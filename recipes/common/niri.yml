@@ -1,11 +1,7 @@
 modules:
   - type: dnf
     source: local
-    repos:
-      cleanup: true # clean up added repos after module is done
-      copr:
-        - name: solopasha/hyprland
-          chroot: fedora-42-x86_64
+    cleanup: true # clean up added repos after module is done
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
@@ -15,16 +11,4 @@ modules:
         - swaylock
         - pavucontrol
         - xwayland-satellite
-
-        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
-          packages:
-            - swww
-            - waybar-git
-            - astal
-            - astal-gjs
-            - astal-gtk4
-            - astal-io
-            - astal-libs
-            - astal-lua
-            - appmenu-glib-translator
-            - aylurs-gtk-shell2
+        - waybar
