@@ -4,23 +4,19 @@ modules:
     repos:
       cleanup: true # clean up added repos after module is done
       copr:
-        - name: yalter/niri-git
-          chroot: fedora-42-x86_64
         - name: solopasha/hyprland
           chroot: fedora-42-x86_64
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
-        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
-          packages:
-            - niri
+        - niri
         - fuzzel
         - swayidle
         - swaylock
         - pavucontrol
         - xwayland-satellite
 
-        - repo: copr:copr.fedorainfracloud.org:yalter:solopasha:hyprland
+        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
           packages:
             - swww
             - waybar-git
