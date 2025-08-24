@@ -13,8 +13,4 @@ modules:
   - from-file: common/packages.yml
   - from-file: common/niri.yml
   - from-file: common/chezmoi.yml
-  
-  - type: script
-    scripts:
-      - nvidia/nvidia-powerlimit.sh
   - from-file: common/scripts.yml
