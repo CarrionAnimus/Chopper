@@ -1,6 +1,5 @@
 modules:
   - type: dnf
-    source: local
     repos:
       cleanup: true
       copr:

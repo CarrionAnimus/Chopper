@@ -1,6 +1,5 @@
 modules:
   - type: dnf
-    source: local
     repos:
       cleanup: true # clean up added repos after module is done
       files:
@@ -20,7 +19,7 @@ modules:
           packages:
             - gum
         # OTD
-        - opentabletdriver-0.6.4.0-1.fc41.x86_64.rpm
+        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.5.1/opentabletdriver-0.6.5.1-1.x86_64.rpm
         # CLI
         - lm_sensors
         - podman
