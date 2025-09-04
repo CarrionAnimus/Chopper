@@ -24,3 +24,4 @@ modules:
         - swaylock
         - pavucontrol
         - xwayland-satellite
+        - xdg-desktop-portal-gnome
