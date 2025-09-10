@@ -47,7 +47,7 @@ jobs:
           docker-images: true
           swap-storage: true
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.9.0
+        uses: blue-build/github-action@v1.9.1
         with:
           cli_version: v0.9.19
           recipe: ${{ matrix.recipe }}
