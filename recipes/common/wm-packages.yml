@@ -5,8 +5,6 @@ modules:
       copr:
         - name: yalter/niri-git
           chroot: fedora-42-x86_64
-        - name: errornointernet/quickshell
-          chroot: fedora-42-x86_64
         - name: solopasha/hyprland
           chroot: fedora-42-x86_64
     install:
@@ -16,7 +14,6 @@ modules:
           install-weak-deps: false
           packages:
             - niri
-        - quickshell
         - waybar
         - swww
         - fuzzel
