@@ -22,6 +22,8 @@ modules:
         - pavucontrol
         - xwayland-satellite
         - xdg-desktop-portal-gnome
+        - nautilus
     remove:
       packages:
         - xdg-desktop-portal-wlr
+        - xdg-desktop-portal-gtk
