@@ -5,7 +5,7 @@ description: Custom Secureblue Image
 alt-tags:
   - secureblue-nvidia-open
 
-base-image: ghcr.io/secureblue/sericea-main-hardened
+base-image: ghcr.io/secureblue/sericea-nvidia-open-hardened
 image-version: 42
 nushell-version: none
 
@@ -14,5 +14,4 @@ modules:
   - from-file: common/packages.yml
   - from-file: common/wm-packages.yml
   - from-file: common/chezmoi.yml
-  - from-file: common/bazzite-kernel.yml
   - from-file: common/scripts.yml
