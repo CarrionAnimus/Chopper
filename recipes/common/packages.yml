@@ -49,6 +49,8 @@ modules:
         - libsixel-utils
         - helix
         - ripgrep
+        - yt-dlp
+        - yt-dlp-zsh-completion
         # qt
         - qt6-qt5compat
         - qt5-qtsvg
