@@ -26,7 +26,6 @@ modules:
         - rofi-wayland
         - sddm
         - sddm-wayland-generic
-        - gamescope
     remove:
       packages:
         - xdg-desktop-portal-wlr
