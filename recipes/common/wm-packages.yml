@@ -7,6 +7,8 @@ modules:
           chroot: fedora-42-x86_64
         - name: solopasha/hyprland
           chroot: fedora-42-x86_64
+        - name: lihaohong/yazi
+          chroot: fedora-42-x86_64
     install:
       skip-unavailable: true
       packages:
@@ -14,8 +16,15 @@ modules:
           install-weak-deps: false
           packages:
             - niri
+        - repo: copr:copr.fedorainfracloud.org:lihaohong:yazi
+          install-weak-deps: false
+          packages:
+            - yazi
         - waybar
         - swww
+        - hyprcursor
+        - xcur2png
+        - mpvpaper
         - fuzzel
         - swayidle
         - swaylock
