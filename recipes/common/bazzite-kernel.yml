@@ -2,3 +2,4 @@ modules:
   - type: containerfile
     containerfiles:
       - bazzite-kernel
+      - bazzite-kernel-nvidia-open
