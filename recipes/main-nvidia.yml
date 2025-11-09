@@ -6,7 +6,7 @@ alt-tags:
   - secureblue-nvidia-open
 
 base-image: ghcr.io/secureblue/sericea-nvidia-open-hardened
-image-version: 43
+image-version: 42
 nushell-version: none
 
 modules:

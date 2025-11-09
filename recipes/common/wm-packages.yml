@@ -4,11 +4,11 @@ modules:
       cleanup: true
       copr:
         - name: yalter/niri-git
-          chroot: fedora-43-x86_64
+          chroot: fedora-42-x86_64
         - name: solopasha/hyprland
-          chroot: fedora-43-x86_64
+          chroot: fedora-42-x86_64
         - name: lihaohong/yazi
-          chroot: fedora-43-x86_64
+          chroot: fedora-42-x86_64
     install:
       skip-unavailable: true
       packages:
