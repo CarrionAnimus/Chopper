@@ -19,12 +19,7 @@ modules:
           packages:
             - gum
         # OTD
-        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.5.1/opentabletdriver-0.6.5.1-1.x86_64.rpm
-        # Sound
-        - alsa-lib
-        - alsa-lib-devel
-        - alsa-plugins
-        - alsa-plugins-a52
+        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.6.2/opentabletdriver-0.6.6.2-1.x86_64.rpm
         # CLI
         - lm_sensors
         - podman

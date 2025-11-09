@@ -24,7 +24,6 @@ modules:
         - swww
         - hyprcursor
         - xcur2png
-        - mpvpaper
         - fuzzel
         - swayidle
         - swaylock
@@ -35,7 +34,6 @@ modules:
         - rofi-wayland
         - sddm
         - sddm-wayland-generic
-        - nwg-wrapper
     remove:
       packages:
         - xdg-desktop-portal-wlr
