@@ -1,32 +1,14 @@
 modules:
   - type: dnf
-    repos:
-      cleanup: true
-      copr:
-        - name: yalter/niri-git
-          chroot: fedora-42-x86_64
-        - name: solopasha/hyprland
-          chroot: fedora-42-x86_64
-        - name: lihaohong/yazi
-          chroot: fedora-42-x86_64
     install:
       skip-unavailable: true
       packages:
-        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
-          install-weak-deps: false
-          packages:
-            - niri
-        - repo: copr:copr.fedorainfracloud.org:lihaohong:yazi
-          install-weak-deps: false
-          packages:
-            - yazi
+        - niri
         - waybar
-        - swww
-        - hyprcursor
-        - xcur2png
         - fuzzel
         - swayidle
         - swaylock
+        - swaybg
         - pavucontrol
         - xwayland-satellite
         - xdg-desktop-portal-gnome
