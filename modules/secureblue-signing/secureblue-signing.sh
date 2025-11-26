@@ -59,11 +59,14 @@ POLICY_FILE="$CONTAINER_DIR/policy.json"
 
 jq --arg image_registry "${IMAGE_REGISTRY}" \
    --arg image_registry_title "${IMAGE_REGISTRY_TITLE}" \
-   '.transports.docker |=
+   '.transports.docker |= 
     { $image_registry: [
         {
             "type": "sigstoreSigned",
-            "keyPath": ("/usr/etc/pki/containers/" + $image_registry_title + ".pub"),
+            "keyPaths": [
+              ("/usr/etc/pki/containers/" + $image_registry_title + ".pub"),
+              ("/usr/etc/pki/containers/" + $image_registry_title + "-2025.pub")
+            ],
             "signedIdentity": {
                 "type": "matchRepository"
             }
