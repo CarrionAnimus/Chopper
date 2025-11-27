@@ -48,7 +48,7 @@ jobs:
           sudo rm -f /mnt/swapfile || true
 
       - name: Build Custom Image
-        uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
+        uses: blue-build/github-action@5d15e0a48bbb32ca037d023a95c0be5c8082281d # v1.10.0
         with:
           cli_version: v0.9.26
           recipe: ${{ matrix.recipe }}
