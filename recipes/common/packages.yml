@@ -7,6 +7,8 @@ modules:
       copr:
         - name: atim/starship
           chroot: fedora-43-x86_64
+        - name: ryanabx/cosmic-epoch
+          chroot: fedora-43-x86_64
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
@@ -14,6 +16,8 @@ modules:
         - repo: copr:copr.fedorainfracloud.org:atim:starship
           packages:
             - starship
+        # Cosmic
+        - cosmic-desktop
         # Charm
         - repo: charm
           packages:
