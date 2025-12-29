@@ -29,7 +29,6 @@ modules:
         - duperemove
         - atuin
         - foot
-        - kitty
         - fastfetch
         - btop
         - bat
