@@ -84,7 +84,4 @@ modules:
     install:
       skip-unavailable: true
       packages:
-        # Yazi
-        - repo: copr:copr.fedorainfracloud.org:gloriouseggroll:nobara-43
-          packages:
-            - opentabletdriver 
+        - opentabletdriver 
