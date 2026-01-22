@@ -5,7 +5,7 @@ description: Custom Secureblue Image
 alt-tags:
   - secureblue-nvidia-open
 
-base-image: ghcr.io/secureblue/sericea-nvidia-open-hardened
+base-image: ghcr.io/secureblue/cosmic-nvidia-open-hardened
 image-version: 43
 nushell-version: none
 cosign-version: none
@@ -13,6 +13,6 @@ cosign-version: none
 modules:
   - from-file: common/files.yml
   - from-file: common/packages.yml
-  - from-file: common/wm-packages.yml
+  - from-file: common/cosmic.yml
   - from-file: common/chezmoi.yml
   - from-file: common/scripts.yml

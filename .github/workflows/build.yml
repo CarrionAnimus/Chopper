@@ -28,7 +28,6 @@ jobs:
         recipe:
           - main-nvidia.yml
           - main-nvidia-open.yml
-          - silverblue-tesla.yml
     steps:
       - name: Optimize build times
         shell: bash

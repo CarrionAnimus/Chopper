@@ -59,3 +59,18 @@ modules:
         # GUI
         - mpv
         - imv
+
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - name: lihaohong/yazi
+          chroot: fedora-43-x86_64
+    install:
+      skip-unavailable: true
+      packages:
+        # Yazi
+        - repo: copr:copr.fedorainfracloud.org:lihaohong:yazi
+          install-weak-deps: false
+          packages:
+            - yazi

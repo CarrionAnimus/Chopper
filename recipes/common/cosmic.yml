@@ -1,0 +1,13 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true # clean up added repos after module is done
+      copr:
+        - name: ryanabx/cosmic-epoch
+          chroot: fedora-43-x86_64
+    install:
+      skip-unavailable: true
+      packages:
+        - repo: copr:copr.fedorainfracloud.org:ryanabx:cosmic-epoch
+          packages:
+            - cosmic-desktop
