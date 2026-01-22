@@ -74,14 +74,3 @@ modules:
           install-weak-deps: false
           packages:
             - yazi
-
-  - type: dnf
-    repos:
-      cleanup: true
-      copr:
-        - name: gloriouseggroll/nobara-43
-          chroot: fedora-43-x86_64
-    install:
-      skip-unavailable: true
-      packages:
-        - opentabletdriver 
