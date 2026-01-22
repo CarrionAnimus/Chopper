@@ -3,7 +3,7 @@
         {
             "pattern": {
                 "feature": "procname",
-                "matches": "niri"
+                "matches": "cosmic-comp"
             },
             "profile": "Limit Free Buffer Pool On Wayland Compositors"
         }
