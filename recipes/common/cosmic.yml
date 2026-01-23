@@ -11,3 +11,32 @@ modules:
         - repo: copr:copr.fedorainfracloud.org:ryanabx:cosmic-epoch
           packages:
             - cosmic-desktop
+    replace:
+      - from-repo: copr:copr.fedorainfracloud.org:ryanabx:cosmic-epoch
+        packages:
+          - cosmic-panel
+          - cosmic-randr
+          - cosmic-icon-theme
+          - cosmic-app-library
+          - cosmic-idle
+          - cosmic-notifications
+          - cosmic-term
+          - cosmic-initial-setup
+          - cosmic-screenshot
+          - cosmic-osd
+          - cosmic-applets
+          - cosmic-launcher
+          - xdg-desktop-portal-cosmic
+          - cosmic-files
+          - cosmic-bg
+          - cosmic-comp
+          - cosmic-greeter
+          - cosmic-workspaces
+          - cosmic-settings-daemon
+          - cosmic-settings
+          - cosmic-session
+          - cosmic-player
+          - cosmic-edit
+          - cosmic-store
+          - cosmic-wallpapers
+          - cosmic-desktop
